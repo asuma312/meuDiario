@@ -2,54 +2,50 @@
 <html lang="en">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/trix.css') }}">
-
+    <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Diario</title>
-
-
     <style>
         body {
-            background-color: #f4f4f9;
-            font-family: 'Georgia', serif;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    background-color: #fff0f5; 
+    font-family: 'Georgia', serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        main {
-            width: 100%;
-            background-color: #fff;
-            padding: 40px;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-        }
+main {
+    width: 100%;
+    background-color: #ffe4e1; 
+    padding: 40px;
+    border: 1px solid #ffb6c1; 
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3); 
+    border-radius: 12px;
+}
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #333;
-        }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #c71585; 
+}
 
-        div {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: #555;
-        }
+div {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
 
-        form {
-            margin-top: 20px;
-        }
-
-
+form {
+    margin-top: 20px;
+}
 
 .buttons {
     display: flex;
-    justify-content:
+    justify-content: center;
     width: 100%;
     padding: 10px;
     gap: 10px;
@@ -61,11 +57,18 @@
     flex-basis: 10px;
     max-width: 100%;
     padding: 10px;
-    margin:0;
+    margin: 0;
+    background-color: #ffb6c1; 
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
 }
 
-
-    </style>
+.buttons .btn:hover {
+    background-color: #ff69b4; 
+}
+</style>
 
     <script src="{{ url_for('static', filename='js/diary.js') }}"></script>
     <script src="{{ url_for('static', filename='js/seusdiarios.js') }}"></script>

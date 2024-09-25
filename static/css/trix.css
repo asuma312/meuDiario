@@ -1,40 +1,40 @@
 trix-toolbar .trix-button-group button {
-            background-color: #6c757d;
-            color: white;
-            border-radius: 20px;
-            padding: 5px 10px;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
+    background-color: #6c757d;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
 
-        trix-toolbar .trix-button-group button:hover {
-            background-color: #495057;
-        }
+trix-toolbar .trix-button-group button:hover {
+    background-color: #495057;
+}
 
-        trix-editor {
-            width: 100%;
-            min-height: 200px;
-            max-height: 75vh;
-            overflow-y: auto;
-            font-size: 1.1em;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+trix-editor {
+    width: 100%;
+    min-height: 200px;
+    max-height: 75vh;
+    overflow-y: auto;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        .attachment__progress {
-            display: none;
-        }
+.attachment__progress {
+    display: none;
+}
 
-        .attachment__caption {
-            display: none;
-        }
+.attachment__caption {
+    display: none;
+}
 
-        trix-toolbar .trix-button-group {
-            border: 0px solid;
-        }
+trix-toolbar .trix-button-group {
+    border: 0px solid;
+}
 
-        .trix-button-row {
-            overflow: hidden;
-        }
+.trix-button-row {
+    overflow: hidden;
+}
