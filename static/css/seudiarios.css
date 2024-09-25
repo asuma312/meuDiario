@@ -34,7 +34,7 @@
             margin-top: 20px;
         }
 
-        /* Estilo dos botões do Trix Editor */
+        
         trix-toolbar .trix-button-group button {
             background-color: #6c757d;
             color: white;
@@ -60,7 +60,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Remover barra de progresso e legendas de anexos */
+       
         .attachment__progress {
             display: none;
         }
