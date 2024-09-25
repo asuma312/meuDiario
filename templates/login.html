@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Diário Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Login no Diário Online</h1>
+        <form action="/login" method="POST" class="form-register">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn-register">Entrar</button>
+        </form>
+                <div class="error-message">
+            <p style="color:red;font-weight:bold;">{{ message }}</p>
+        </div>
+        <p>Não tem uma conta? <a href="/register">Registre-se aqui</a>.</p>
+    </div>
+</body>
+</html>

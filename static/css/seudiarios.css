@@ -1,0 +1,78 @@
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            width: 60%;
+            background-color: #fff;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        div {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        /* Estilo dos botões do Trix Editor */
+        trix-toolbar .trix-button-group button {
+            background-color: #6c757d;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 10px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        trix-toolbar .trix-button-group button:hover {
+            background-color: #495057;
+        }
+
+        trix-editor {
+            width: 100%;
+            min-height: 200px;
+            max-height: 75vh;
+            overflow-y: auto;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Remover barra de progresso e legendas de anexos */
+        .attachment__progress {
+            display: none;
+        }
+
+        .attachment__caption {
+            display: none;
+        }
+
+        trix-toolbar .trix-button-group{
+        border: 0px solid ;
+        }
+
+        .trix-button-row{
+        overflow:hidden;
+        }
