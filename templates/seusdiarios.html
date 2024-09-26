@@ -31,7 +31,7 @@
      alt="Imagem do Diário">
 <br>
 
-        <button onclick="window.location.href='{{ url_for('diario', hash=writing[5], page=writing[6]) }}'" class="btn btn-primary">Abrir</button>
+        <button onclick="window.location.href='{{ url_for('main.diario', hash=writing[5], page=writing[6]) }}'" class="btn btn-primary">Abrir</button>
         <button id="deleteDiario" class="btn btn-danger" onclick="deleteDiario('{{writing[5]}}')">Deletar</button>
     </div>
     {% endfor %}

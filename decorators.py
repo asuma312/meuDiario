@@ -11,11 +11,11 @@ def verifylogged(route):
 
         userhash = flask.session.get("uh")
         if not userhash:
-            return flask.redirect(flask.url_for("login"))
+            return flask.redirect(flask.url_for("auth.login"))
 
         user = verify_db(userhash)
         if not user:
-            return flask.redirect(flask.url_for("login"))
+            return flask.redirect(flask.url_for("auth.login"))
 
         return route(*args, **kwargs)
 

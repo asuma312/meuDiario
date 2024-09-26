@@ -73,7 +73,9 @@ function closePopupNoEl() {
 
 
     async function newDiarioPopUp(){
-        let diario = await fetch("/backend/popups/newdiariopopup");
+        popupname = 'novodiario';
+        fullurl = urls.popup + "?popup=" + popupname;
+        let diario = await fetch(fullurl);
         let data = await diario.json();
         let html = data.html;
 

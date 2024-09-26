@@ -83,7 +83,7 @@ form {
 
 <main>
     <div id="diario">
-        <button onclick="window.location.href='{{ url_for('seusdiarios') }}'" class="btn btn-primary">Voltar</button>
+        <button onclick="window.location.href='{{ url_for('main.seusdiarios') }}'" class="btn btn-primary">Voltar</button>
         <div class="container">
             <h1>{{nomediario }}</h1>
             <div>Você escreveu <span id="wordcount">0</span> palavras e <span id="lettercount">0</span> letras.<br>
@@ -99,7 +99,7 @@ form {
 
             <div id="buttons" class="container buttons">
                 {% if prevpage %}
-                <button onclick="window.location.href='{{ url_for('diario', page=prevpage, hash=hash) }}'" class="btn btn-primary">
+                <button onclick="window.location.href='{{ url_for('main.diario', page=prevpage, hash=hash) }}'" class="btn btn-primary">
                     <i class="bi bi-arrow-left"></i>
                 </button>
                 {% endif %}
@@ -109,7 +109,7 @@ form {
                 <button onclick="deletePage()" class="btn btn-primary">Deletar Página</button>
 
                                 {% if nextpage %}
-                <button onclick="window.location.href='{{ url_for('diario', page=nextpage, hash=hash) }}'" class="btn btn-primary">
+                <button onclick="window.location.href='{{ url_for('main.diario', page=nextpage, hash=hash) }}'" class="btn btn-primary">
                     <i class="bi bi-arrow-right"></i>
                 </button>
                 {% endif %}
